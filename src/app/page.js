@@ -1,9 +1,11 @@
 import Image from "next/image";
-import { Hero_section } from "@/components/hero_section/Hero_section";
+import Components from "@/components/index"
 export default function Home() {
   return (
     <div className="">
-      <Hero_section/>
+      <Components.Navbar/>
+      <Components.Hero_section/>
+      <Components.Service_section/>
     </div>
   );
 }
