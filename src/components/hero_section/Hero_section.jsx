@@ -12,7 +12,7 @@ export function Hero_section() {
     <BackgroundLines className="flex items-center justify-center w-full px-4">
       <div className="flex w-full items-center FLEX">
         {/* Left side - Image */}
-        <div className="w-1/2 h-[600px] flex items-center justify-center">
+        <div className="w-1/2 h-[300px] flex items-center justify-center">
           <components.GlobeDemo/>
         </div>
 
