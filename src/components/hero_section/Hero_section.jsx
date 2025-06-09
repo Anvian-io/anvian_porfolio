@@ -18,7 +18,7 @@ export function Hero_section() {
 
         {/* Right side - Text */}
         <div className="w-1/2 flex flex-col items-center justify-center">
-          <h2 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-5xl md:text-6xl lg:text-8xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+          <h2 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 dark:from-neutral-400 dark:to-white text-5xl md:text-6xl lg:text-8xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
             {/* <ColourfulText text="Anvian" /> */}
             Anvian
           </h2>
