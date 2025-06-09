@@ -7,6 +7,7 @@ export default function Home() {
       <Components.Hero_section />
       <Components.ServiceSection />
       <Components.PastProjects />
+      <Components.FeedbackSection />
     </div>
   );
 }
