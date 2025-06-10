@@ -115,10 +115,22 @@ export function ServiceSection() {
   return (
     <div className="py-20 w-full bg-black px-4">
       <div className="text-center mb-20">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <motion.h2
+          className="text-4xl md:text-5xl font-bold text-white"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Our Services
-        </h1>
-        <div className="h-1 w-20 bg-gray-400 mx-auto"></div>
+        </motion.h2>
+        {/* <motion.p
+          className="mt-4 text-gray-400 max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+        >
+          <div className="h-1 w-20 bg-gray-400 mx-auto"></div>
+        </motion.p> */}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

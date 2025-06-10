@@ -4,10 +4,22 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Components.Navbar />
-      <Components.Hero_section />
-      <Components.ServiceSection />
-      <Components.PastProjects />
-      <Components.FeedbackSection />
+      <div id="home">
+        <Components.Hero_section />
+      </div>
+      <div id="services">
+        <Components.ServiceSection />
+      </div>
+      <div id="projects">
+        <Components.PastProjects />
+      </div>
+      <div id="feedback">
+        <Components.FeedbackSection />
+      </div>
+      <div id="contact">
+        <Components.ContactUs />
+      </div>
+      <Components.Footer />
     </div>
   );
 }

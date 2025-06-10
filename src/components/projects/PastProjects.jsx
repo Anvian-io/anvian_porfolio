@@ -3,7 +3,7 @@
 import React from "react";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { Carousel } from "@/components/ui/carousel.jsx";
-
+import { motion } from "framer-motion";
 export function PastProjects() {
   const projects = [
     {
@@ -41,13 +41,23 @@ export function PastProjects() {
   return (
     <section className="py-20 px-4" id="projects ">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold text-white text-center mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Past Projects
-        </h2>
-        <p className="text-neutral-600 dark:text-neutral-400 text-center max-w-2xl mx-auto mb-12">
+        </motion.h2>
+        <motion.p
+          className="mt-4 text-gray-400 max-w-2xl mx-auto text-center mb-12"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+        >
           Explore my recent work showcasing various technologies and design
           approaches
-        </p>
+        </motion.p>
 
         <div className="hidden md:block ">
           <Carousel

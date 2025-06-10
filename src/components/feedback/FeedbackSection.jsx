@@ -1,6 +1,7 @@
+"use client";
 import React from 'react';
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
-
+import { motion } from "framer-motion";
 export const FeedbackSection = () => {
   const testimonials = [
     {
@@ -45,17 +46,27 @@ export const FeedbackSection = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
+            <motion.h2
+              className="text-4xl md:text-5xl font-bold text-white"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               Client Feedback
-            </h2>
-            <p className="max-w-[700px] text-gray-300 md:text-xl">
+            </motion.h2>
+            <motion.p
+              className="mt-4 text-gray-400 max-w-2xl mx-auto"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.7 }}
+            >
               Hear what industry leaders say about our services
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="mt-12">
-          <AnimatedTestimonials 
-            testimonials={testimonials} 
+          <AnimatedTestimonials
+            testimonials={testimonials}
             className="bg-gray-900 text-white border-gray-800"
           />
         </div>
