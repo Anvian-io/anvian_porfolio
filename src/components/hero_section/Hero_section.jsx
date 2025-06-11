@@ -80,13 +80,13 @@ export function Hero_section() {
 
         {/* Right Side - Enhanced Server Visualization */}
         <div
-          className="w-full md:w-1/2 h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center relative order-2 md:order-2"
+          className="w-full md:w-1/2 h-[580px] sm:h-[500px] md:h-[600px] flex items-center justify-center relative order-2 md:order-2"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           {/* Server Rack Visualization */}
           <motion.div
-            className="relative h-[250px] w-[180px] sm:h-[300px] sm:w-[200px] md:h-[350px] md:w-[240px]"
+            className="mt-10 relative h-[380px] w-[260px] sm:h-[300px] sm:w-[200px] md:h-[350px] md:w-[240px]"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -200,7 +200,7 @@ export function Hero_section() {
 
             {/* Floating Website Preview */}
             <motion.div
-              className="absolute -top-6 -right-8 w-[110px] h-[80px] sm:w-[130px] sm:h-[90px] md:-top-8 md:-right-10 md:w-[140px] md:h-[100px] bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-md shadow-xl overflow-hidden z-20"
+              className="absolute -top-6 -right-8 w-[130px] h-[100px] sm:w-[130px] sm:h-[90px] md:-top-8 md:-right-10 md:w-[140px] md:h-[100px] bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-md shadow-xl overflow-hidden z-20"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{
                 opacity: 1,
@@ -215,8 +215,8 @@ export function Hero_section() {
               }}
             >
               {/* Browser UI */}
-              <div className="h-3 sm:h-4 bg-gray-800 border-b border-gray-700 flex px-1 sm:px-2 items-center">
-                <div className="w-1.5 h-1.5 rounded-full bg-gray-600 mr-1"></div>
+              <div className="h-4 sm:h-4 bg-gray-800 border-b border-gray-700 flex px-1 sm:px-2 items-center">
+                <div className="w-1.5 h-2.5 rounded-full bg-gray-600 mr-1"></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-gray-600 mr-1"></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-gray-600"></div>
                 <div className="text-[0.4rem] sm:text-[0.5rem] text-gray-500 ml-1">
@@ -311,7 +311,7 @@ export function Hero_section() {
 
           {/* Floating Tagline */}
           <motion.div
-            className="absolute bottom-0 w-full text-center text-neutral-400 text-xs sm:text-sm"
+            className="mt-10 absolute bottom-0 w-full text-center text-neutral-400 text-xs sm:text-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 1 }}
