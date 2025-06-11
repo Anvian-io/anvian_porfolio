@@ -21,7 +21,7 @@ export const Footer = () => {
             >
               <div className="flex items-center space-x-2">
                 <div className="bg-white w-8 h-8 rounded-full" />
-                <span className="text-2xl font-bold text-white">WebCraft</span>
+                <span className="text-2xl font-bold text-white">Anvian</span>
               </div>
             </motion.div>
 
@@ -85,22 +85,22 @@ export const Footer = () => {
                 <div className="mt-1 bg-gray-900 p-2 rounded-lg">
                   <MailIcon />
                 </div>
-                <span className="text-gray-400">contact@webcraft.agency</span>
+                <span className="text-gray-400">anvianco@gmail.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="mt-1 bg-gray-900 p-2 rounded-lg">
                   <PhoneIcon />
                 </div>
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+919321607843</span>
               </li>
-              <li className="flex items-start space-x-3">
+              {/* <li className="flex items-start space-x-3">
                 <div className="mt-1 bg-gray-900 p-2 rounded-lg">
                   <LocationIcon />
                 </div>
                 <span className="text-gray-400">
                   123 Digital Avenue, NY 10001
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -133,7 +133,7 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-16 pt-8 text-center">
           <p className="text-gray-500">
-            © {currentYear} WebCraft Agency. All rights reserved.
+            © {currentYear} Anvian Agency. All rights reserved.
           </p>
           <div className="flex justify-center space-x-6 mt-4">
             {["Terms", "Privacy", "Cookies"].map((item) => (

@@ -30,7 +30,22 @@ export const ContactUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <BackgroundGradient className="rounded-2xl p-8 bg-gray-950">
-            <form className="space-y-10">
+            <form
+              className="space-y-10"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const name = e.target.name.value;
+                const email = e.target.email.value;
+                const subject = e.target.subject.value;
+                const message = e.target.message.value;
+
+                const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+                window.open(
+                  `https://wa.me/919321607843?text=${whatsappMessage}`,
+                  "_blank"
+                );
+              }}
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label
@@ -41,9 +56,11 @@ export const ContactUs = () => {
                   </label>
                   <input
                     id="name"
+                    name="name"
                     type="text"
                     placeholder="John Doe"
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                    required
                   />
                 </div>
                 <div className="space-y-2">
@@ -55,9 +72,11 @@ export const ContactUs = () => {
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="john@company.com"
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                    required
                   />
                 </div>
               </div>
@@ -71,9 +90,11 @@ export const ContactUs = () => {
                 </label>
                 <input
                   id="subject"
+                  name="subject"
                   type="text"
                   placeholder="Project Inquiry"
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                  required
                 />
               </div>
 
@@ -86,9 +107,11 @@ export const ContactUs = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   placeholder="Tell us about your project..."
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                  required
                 />
               </div>
 
@@ -98,7 +121,7 @@ export const ContactUs = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Send Message
+                Send Message on WhatsApp
               </motion.button>
             </form>
           </BackgroundGradient>
@@ -108,23 +131,16 @@ export const ContactUs = () => {
             <div className="space-y-8">
               <ContactCard
                 title="Email"
-                info="contact@webcraft.agency"
+                info="anvianco@gmail.com"
                 description="Drop us a line anytime"
                 icon={<MailIcon />}
               />
 
               <ContactCard
                 title="Phone"
-                info="+1 (555) 123-4567"
-                description="Mon-Fri, 9am-5pm EST"
+                info="+919321607843"
+                description="Mon-Fri, 9am-5pm IST"
                 icon={<PhoneIcon />}
-              />
-
-              <ContactCard
-                title="Office"
-                info="123 Digital Avenue"
-                description="New York, NY 10001"
-                icon={<LocationIcon />}
               />
             </div>
 
@@ -154,7 +170,7 @@ export const ContactUs = () => {
       </div>
     </div>
   );
-}
+};
 
 // Reusable contact card component
 const ContactCard = ({ title, info, description, icon }) => (
@@ -171,7 +187,7 @@ const ContactCard = ({ title, info, description, icon }) => (
   </motion.div>
 );
 
-// Icon components
+// Icons
 const MailIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -206,22 +222,3 @@ const PhoneIcon = () => (
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 );
-
-const LocationIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="text-white"
-  >
-    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-    <circle cx="12" cy="10" r="3" />
-  </svg>
-);
-
