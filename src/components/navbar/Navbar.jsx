@@ -123,7 +123,7 @@ export function Navbar() {
                   </Link>
                 ))}
                 <Link
-                  href="/contact"
+                  href="#contact"
                   className="mx-4 mt-2 relative px-6 py-3 rounded-lg group overflow-hidden"
                   onClick={() => setIsOpen(false)}
                 >
