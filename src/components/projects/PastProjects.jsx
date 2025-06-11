@@ -7,35 +7,33 @@ import { motion } from "framer-motion";
 export function PastProjects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "Full-featured online store with payment integration and inventory management",
-      image: "/ecommerce.webp",
-      tags: ["React", "Node.js", "Stripe API"],
-      link: "#",
+      title: "Clothing Website",
+      description: "Full-featured online clothing store",
+      image: "/ClothingWebsite.png",
+      tags: ["Next.js", "Node.js", "MongoDB", "Redis"],
+      link: "https://pradha-frontend.vercel.app/",
     },
     {
-      title: "Task Management App",
-      description:
-        "Collaborative task management system with real-time updates",
-      image: "/task-app.webp",
-      tags: ["Next.js", "Firebase", "Tailwind CSS"],
-      link: "#",
+      title: "Clothing Website Dashboard",
+      description: "Product Management Dashboard Website",
+      image: "/ClothingDashboard.png",
+      tags: ["Next.js", "Node.js", "MongoDB"],
+      link: "https://pradha-dashboard.vercel.app/",
     },
-    {
-      title: "Portfolio Website",
-      description: "Modern portfolio with 3D animations and dark mode",
-      image: "/portfolio.webp",
-      tags: ["Three.js", "GSAP", "Framer Motion"],
-      link: "#",
-    },
-    {
-      title: "Health Tracking Dashboard",
-      description: "Data visualization platform for health metrics analytics",
-      image: "/health-dashboard.webp",
-      tags: ["D3.js", "Express", "MongoDB"],
-      link: "#",
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   description: "Modern portfolio with 3D animations and dark mode",
+    //   image: "/portfolio.webp",
+    //   tags: ["Three.js", "GSAP", "Framer Motion"],
+    //   link: "#",
+    // },
+    // {
+    //   title: "Health Tracking Dashboard",
+    //   description: "Data visualization platform for health metrics analytics",
+    //   image: "/health-dashboard.webp",
+    //   tags: ["D3.js", "Express", "MongoDB"],
+    //   link: "#",
+    // },
   ];
 
   return (
@@ -64,6 +62,7 @@ export function PastProjects() {
             slides={projects.map((project) => ({
               title: project.title,
               button: "View Details",
+              link: project.link,
               src: project.image,
               content: (
                 <div className="pt-4">
@@ -118,7 +117,7 @@ export function PastProjects() {
                   ))}
                 </div>
                 <button
-                  className="rounded-full px-4 py-2 text-white flex items-center space-x-1 bg-black mt-2 text-sm font-bold dark:bg-zinc-800 w-full justify-center"
+                  className="rounded-full px-4 py-2 text-white flex items-center space-x-1 bg-black mt-2 text-sm font-bold dark:bg-zinc-800 w-full justify-center cursor-pointer"
                   onClick={() => window.open(project.link, "_blank")}
                 >
                   <span>View Project</span>
