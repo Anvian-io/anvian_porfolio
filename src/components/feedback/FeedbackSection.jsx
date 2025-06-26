@@ -11,6 +11,13 @@ export const FeedbackSection = () => {
       designation: "Developer",
       src: "/suthakar.jpg",
     },
+    {
+      quote:
+        "Being part of this company has been a fantastic journey. The level of professionalism, teamwork, and dedication to excellence is genuinely inspiring. As a developer, I've learned so much through challenging projects and an encouraging work culture.",
+      name: "Tanmay Dhole",
+      designation: "Developer",
+      src: "/tanmay.png",
+    },
 
     // {
     //   quote:
