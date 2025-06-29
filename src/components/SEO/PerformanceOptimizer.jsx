@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 
-const PerformanceOptimizer = () => {
+export const PerformanceOptimizer = () => {
   useEffect(() => {
     // Preload critical resources
     const preloadLinks = [
@@ -197,4 +197,4 @@ export const ServiceWorkerRegistration = () => {
   return null;
 };
 
-export default PerformanceOptimizer; 
+// export default PerformanceOptimizer; 
