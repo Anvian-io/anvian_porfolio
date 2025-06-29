@@ -1,25 +1,59 @@
 import Image from "next/image";
-import Components from "@/components/index"
+import Components from "@/components/index";
+import { Main, Section, H1, H2, H3, P, Article } from "@/components/SEO/SemanticWrapper";
+import { 
+  OrganizationSchema, 
+  WebSiteSchema, 
+  ServiceSchema, 
+  FAQSchema,
+  LocalBusinessSchema 
+} from "@/components/SEO/StructuredData";
+import { 
+  PerformanceOptimizer, 
+  FontOptimizer, 
+  ResourceHints 
+} from "@/components/SEO/PerformanceOptimizer";
+
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
-      <Components.Navbar />
-      <div id="home">
-        <Components.Hero_section />
-      </div>
-      <div id="services">
-        <Components.ServiceSection />
-      </div>
-      <div id="projects">
-        <Components.PastProjects />
-      </div>
-      <div id="feedback">
-        <Components.FeedbackSection />
-      </div>
-      <div id="contact">
-        <Components.ContactUs />
-      </div>
-      <Components.Footer />
-    </div>
+    <>
+      {/* Performance Optimizations */}
+      <PerformanceOptimizer />
+      <FontOptimizer />
+      <ResourceHints />
+      
+      {/* Structured Data for SEO */}
+      <OrganizationSchema />
+      <WebSiteSchema />
+      <ServiceSchema />
+      <FAQSchema />
+      <LocalBusinessSchema />
+      
+      <Main className="overflow-x-hidden">
+        <Components.Navbar />
+        
+        <Section id="home" aria-label="Hero Section">
+          <Components.Hero_section />
+        </Section>
+        
+        <Section id="services" aria-label="Our Services">
+          <Components.ServiceSection />
+        </Section>
+        
+        <Section id="projects" aria-label="Past Projects">
+          <Components.PastProjects />
+        </Section>
+        
+        <Section id="feedback" aria-label="Client Feedback">
+          <Components.FeedbackSection />
+        </Section>
+        
+        <Section id="contact" aria-label="Contact Us">
+          <Components.ContactUs />
+        </Section>
+        
+        <Components.Footer />
+      </Main>
+    </>
   );
 }

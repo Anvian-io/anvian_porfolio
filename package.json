@@ -2,11 +2,38 @@
   "name": "anvian_porfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Anvian - Premium Web Development Agency specializing in custom web development, e-commerce websites, UI/UX design, CMS development, SEO optimization, and landing pages.",
+  "keywords": [
+    "web development",
+    "website agency",
+    "custom websites",
+    "e-commerce websites",
+    "UI/UX design",
+    "CMS development",
+    "SEO optimization",
+    "landing pages",
+    "IT company",
+    "web design",
+    "digital agency",
+    "React",
+    "Next.js",
+    "TypeScript"
+  ],
+  "author": "Anvian Team <anvianco@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://anvianco.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anvian/anvian-portfolio"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
+    "export": "next build && next export",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.13",
@@ -35,8 +62,19 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@next/bundle-analyzer": "^15.3.3",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "tailwindcss": "^4"
-  }
+    "tailwindcss": "^4",
+    "@svgr/webpack": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
