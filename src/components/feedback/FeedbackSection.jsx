@@ -18,6 +18,13 @@ export const FeedbackSection = () => {
       designation: "Developer",
       src: "/tanmay.png",
     },
+    {
+      quote:
+        "Joining this company has been a transformative experience. The exposure to real-world challenges, the freedom to innovate, and the constant encouragement from peers have helped me sharpen my skills and grow both personally and professionally.",
+      name: "Tushar Hasule",
+      designation: "Developer",
+      src: "/tushar.jpg",
+    },
 
     // {
     //   quote:
