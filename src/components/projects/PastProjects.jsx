@@ -11,14 +11,14 @@ export function PastProjects() {
       description: "Full-featured online clothing store",
       image: "/ClothingWebsite.png",
       tags: ["Next.js", "Node.js", "MongoDB", "Redis"],
-      link: "https://pradha-frontend.vercel.app/",
+      link: "https://pradha-frontend-main.vercel.app/",
     },
     {
       title: "Clothing Website Dashboard",
       description: "Product Management Dashboard Website",
       image: "/ClothingDashboard.png",
       tags: ["Next.js", "Node.js", "MongoDB"],
-      link: "https://pradha-dashboard.vercel.app/",
+      link: "https://pradha-dashboard-main.vercel.app/",
     },
     // {
     //   title: "Portfolio Website",
