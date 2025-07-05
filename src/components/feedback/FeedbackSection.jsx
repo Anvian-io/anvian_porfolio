@@ -13,17 +13,17 @@ export const FeedbackSection = () => {
     },
     {
       quote:
-        "Being part of this company has been a fantastic journey. The level of professionalism, teamwork, and dedication to excellence is genuinely inspiring. As a developer, I've learned so much through challenging projects and an encouraging work culture.",
-      name: "Tanmay Dhole",
-      designation: "Developer",
-      src: "/tanmay.png",
-    },
-    {
-      quote:
         "Joining this company has been a transformative experience. The exposure to real-world challenges, the freedom to innovate, and the constant encouragement from peers have helped me sharpen my skills and grow both personally and professionally.",
       name: "Tushar Hasule",
       designation: "Developer",
       src: "/tushar.jpg",
+    },
+    {
+      quote:
+        "Being part of this company has been a fantastic journey. The level of professionalism, teamwork, and dedication to excellence is genuinely inspiring. As a developer, I've learned so much through challenging projects and an encouraging work culture.",
+      name: "Tanmay Dhole",
+      designation: "Developer",
+      src: "/tanmay.png",
     },
 
     // {
