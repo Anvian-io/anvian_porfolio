@@ -6,7 +6,7 @@ export const BackgroundGradient = ({
   children,
   className,
   containerClassName,
-  animate = true
+  animate = true,
 }) => {
   const variants = {
     initial: {
@@ -16,6 +16,10 @@ export const BackgroundGradient = ({
       backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
     },
   };
+  
+  const gradientDark =
+    "bg-[radial-gradient(circle_farthest-side_at_0_100%,#007a6d,transparent),radial-gradient(circle_farthest-side_at_100%_0,#5c4dd1,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#d9a900,transparent),radial-gradient(circle_farthest-side_at_0_0,#0c7ec7,#0a0a0c)]";
+
   return (
     <div className={cn("relative p-[4px] group", containerClassName)}>
       <motion.div
@@ -36,7 +40,7 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
-          " bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+          gradientDark
         )} />
       <motion.div
         variants={animate ? variants : undefined}
@@ -56,7 +60,7 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] will-change-transform",
-          "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+          gradientDark
         )} />
       <div className={cn("relative z-10", className)}>{children}</div>
     </div>
