@@ -102,7 +102,7 @@ export function Hero_section() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <div className="text-2xl md:text-4xl bg-gradient-to-r from-[#171717] to-[#353535] rounded-lg group-hover:bg-gradient-to-l transition-all duration-500 mb-4 p-2">
+            <div className="text-2xl md:text-4xl bg-gradient-to-r from-[#171717] to-[#353535] rounded-lg group-hover:bg-gradient-to-l transition-all duration-500 mb-4 p-2 text-white">
               Website Building Agency
             </div>
             <div className="text-xs md:text-sm text-green-400  mb-2">
