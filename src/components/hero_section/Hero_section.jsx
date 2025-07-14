@@ -78,7 +78,7 @@ export function Hero_section() {
         {/* Left Side - Updated with rotating services */}
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center order-1 md:order-1 mt-8 md:mt-0">
           <motion.p
-            className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 dark:from-neutral-400 dark:to-white text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] font-sans py-2 relative z-20 font-bold tracking-tight text-center"
+            className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-white text-[5rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] font-sans py-2 relative z-20 font-bold tracking-tight text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -90,7 +90,7 @@ export function Hero_section() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
-            className="max-w-xl text-center text-base md:text-lg text-neutral-700 dark:text-neutral-400 px-4"
+            className="max-w-xl text-center text-base md:text-lg text-neutral-400 px-4"
           >
             Design Your Vision. <Cover>Develop Your Future</Cover>
           </motion.h2>
@@ -119,7 +119,7 @@ export function Hero_section() {
                   transition={{ duration: 0.5 }}
                   className="absolute"
                 >
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
+                  <div className="text-xl text-white sm:text-2xl md:text-3xl font-bold text-center">
                     {/* <ColourfulText> */}
                     {services[currentServiceIndex]}
                     {/* </ColourfulText> */}
@@ -135,7 +135,7 @@ export function Hero_section() {
                   className={`w-2 h-2 rounded-full ${
                     currentServiceIndex === idx
                       ? "bg-blue-500"
-                      : "bg-neutral-300 dark:bg-neutral-700"
+                      : "bg-neutral-700"
                   }`}
                   animate={{
                     scale: currentServiceIndex === idx ? 1.2 : 1,
