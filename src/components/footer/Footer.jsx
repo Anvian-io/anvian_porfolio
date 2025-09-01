@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { BackgroundGradient } from "../ui/background-gradient";
 import { ColourfulText } from "../ui/colourful-text";
 
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -20,7 +21,9 @@ export const Footer = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="flex items-center space-x-2">
-                <div className="bg-white w-8 h-8 rounded-full" />
+                {/* <div className="bg-white w-8 h-8 rounded-full" /> */}
+                <img src="/avain2.png" alt="Anvain Logo" className=" w-8 h-8 rounded-full" />
+
                 <span className="text-2xl font-bold text-white">Anvian</span>
               </div>
             </motion.div>
@@ -95,6 +98,7 @@ export const Footer = () => {
               </li>
               {/* <li className="flex items-start space-x-3">
                 <div className="mt-1 bg-gray-900 p-2 rounded-lg">
+
                   <LocationIcon />
                 </div>
                 <span className="text-gray-400">
