@@ -25,6 +25,45 @@ export const FeedbackSection = () => {
       designation: "Developer",
       src: "/tanmay.png",
     },
+     {
+      quote:
+        "My journey here has been truly transformative. Collaborating with talented peers and working on challenging projects has not only strengthened my technical skills but also boosted my confidence as a developer. The constant support, teamwork, and shared learning with my college mates have shaped me into a better problem-solver and team player",
+      name: "Ganesh Gowda",
+      designation: "Developer",
+      src: "/ganesh.jpeg",
+    },
+    {
+      quote:
+        "Working here has been a truly rewarding experience. The environment encourages innovation, collaboration, and continuous learning. I have had the privilege of working alongside talented peers who constantly push me to do better. As a developer, I have sharpened my skills, expanded my knowledge, and gained the confidence to take on challenging projects with a strong sense of purpose",
+      name: "Prajwal Shevante",
+      designation: "Developer",
+      src: "/prajwal.jpeg",
+    },
+    {
+      quote:
+        "Working with Anvian was a game changing experience in my career , here i learned from my fellow colleges and gained an amazing experience by working with various complex projects, making me a more skilled and knowledgeable person in developing complex web apps.",
+      name: "Harshal Chaudhari",
+      designation: "Developer",
+      src: "/harshal.jpg",
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // {
     //   quote:
