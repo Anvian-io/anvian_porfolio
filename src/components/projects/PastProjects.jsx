@@ -20,6 +20,13 @@ export function PastProjects() {
       tags: ["Next.js", "Node.js", "MongoDB"],
       link: "https://pradha-dashboard-main.vercel.app/",
     },
+    {
+      title: "Red Apple Cars",
+      description: "Cars User Website",
+      image: "/red_apple_cars.png",
+      tags: ["Next.js", "Node.js", "MongoDB"],
+      link: "https://staging-bs.redapplecars.com/",
+    },
     // {
     //   title: "Portfolio Website",
     //   description: "Modern portfolio with 3D animations and dark mode",
