@@ -23,7 +23,7 @@ export default function WhatsappIcon() {
   //   }
   // }, []);
 
-  const whatsappLink =`https://wa.me/+919321607843`;
+  const whatsappLink = `https://wa.me/+918291249880`;
   return (
     <a
       href={whatsappLink}

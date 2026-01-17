@@ -4,13 +4,13 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { motion } from "framer-motion";
 export const FeedbackSection = () => {
   const testimonials = [
-    {
-      quote:
-        "Working with this company has been an incredible experience. The team's professionalism, collaborative spirit, and commitment to quality are truly commendable. As a developer, I’ve grown tremendously thanks to the innovative projects and supportive environment.",
-      name: "Suthakar Anburaj",
-      designation: "Developer",
-      src: "/suthakar.jpg",
-    },
+    // {
+    //   quote:
+    //     "Working with this company has been an incredible experience. The team's professionalism, collaborative spirit, and commitment to quality are truly commendable. As a developer, I’ve grown tremendously thanks to the innovative projects and supportive environment.",
+    //   name: "Suthakar Anburaj",
+    //   designation: "Developer",
+    //   src: "/suthakar.jpg",
+    // },
     {
       quote:
         "Joining this company has been a transformative experience. The exposure to real-world challenges, the freedom to innovate, and the constant encouragement from peers have helped me sharpen my skills and grow both personally and professionally.",
@@ -18,52 +18,34 @@ export const FeedbackSection = () => {
       designation: "Developer",
       src: "/tushar.jpg",
     },
-    {
-      quote:
-        "Being part of this company has been a fantastic journey. The level of professionalism, teamwork, and dedication to excellence is genuinely inspiring. As a developer, I've learned so much through challenging projects and an encouraging work culture.",
-      name: "Tanmay Dhole",
-      designation: "Developer",
-      src: "/tanmay.png",
-    },
-     {
-      quote:
-        "My journey here has been truly transformative. Collaborating with talented peers and working on challenging projects has not only strengthened my technical skills but also boosted my confidence as a developer. The constant support, teamwork, and shared learning with my college mates have shaped me into a better problem-solver and team player",
-      name: "Ganesh Gowda",
-      designation: "Developer",
-      src: "/ganesh.jpeg",
-    },
-    {
-      quote:
-        "Working here has been a truly rewarding experience. The environment encourages innovation, collaboration, and continuous learning. I have had the privilege of working alongside talented peers who constantly push me to do better. As a developer, I have sharpened my skills, expanded my knowledge, and gained the confidence to take on challenging projects with a strong sense of purpose",
-      name: "Prajwal Shevante",
-      designation: "Developer",
-      src: "/prajwal.jpeg",
-    },
+    // {
+    //   quote:
+    //     "Being part of this company has been a fantastic journey. The level of professionalism, teamwork, and dedication to excellence is genuinely inspiring. As a developer, I've learned so much through challenging projects and an encouraging work culture.",
+    //   name: "Tanmay Dhole",
+    //   designation: "Developer",
+    //   src: "/tanmay.png",
+    // },
+    //  {
+    //   quote:
+    //     "My journey here has been truly transformative. Collaborating with talented peers and working on challenging projects has not only strengthened my technical skills but also boosted my confidence as a developer. The constant support, teamwork, and shared learning with my college mates have shaped me into a better problem-solver and team player",
+    //   name: "Ganesh Gowda",
+    //   designation: "Developer",
+    //   src: "/ganesh.jpeg",
+    // },
+    // {
+    //   quote:
+    //     "Working here has been a truly rewarding experience. The environment encourages innovation, collaboration, and continuous learning. I have had the privilege of working alongside talented peers who constantly push me to do better. As a developer, I have sharpened my skills, expanded my knowledge, and gained the confidence to take on challenging projects with a strong sense of purpose",
+    //   name: "Prajwal Shevante",
+    //   designation: "Developer",
+    //   src: "/prajwal.jpeg",
+    // },
     {
       quote:
         "Working with Anvian was a game changing experience in my career , here i learned from my fellow colleges and gained an amazing experience by working with various complex projects, making me a more skilled and knowledgeable person in developing complex web apps.",
       name: "Harshal Chaudhari",
-      designation: "Developer",
+      designation: "Founder",
       src: "/harshal.jpg",
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // {
     //   quote:
@@ -86,13 +68,13 @@ export const FeedbackSection = () => {
     //   designation: "Engineering Lead at DataPro",
     //   src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // },
-    // {
-    //   quote:
-    //     "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-    //   name: "Lisa Thompson",
-    //   designation: "VP of Technology at FutureNet",
-    //   src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    // },
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Dhruv Chawla",
+      designation: "CTO at Anvian",
+      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
 
   return (

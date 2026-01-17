@@ -41,7 +41,7 @@ export const ContactUs = () => {
 
                 const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
                 window.open(
-                  `https://wa.me/919321607843?text=${whatsappMessage}`,
+                  `https://wa.me/918291249880?text=${whatsappMessage}`,
                   "_blank"
                 );
               }}
@@ -138,7 +138,7 @@ export const ContactUs = () => {
 
               <ContactCard
                 title="Phone"
-                info="+919321607843"
+                info="+918291249880"
                 description="Mon-Fri, 9am-5pm IST"
                 icon={<PhoneIcon />}
               />
